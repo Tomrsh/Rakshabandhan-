@@ -3,498 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>रक्षाबंधन की शुभकामनाएँ</title>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>रक्षाबंधन की हार्दिक शुभकामनाएं</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Kalam:wght@700&display=swap" rel="stylesheet">
     <style>
         * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Baloo Bhai 2', cursive;
-}
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
-    min-height: 100vh;
-    overflow-x: hidden;
-    color: #5a2a27;
-    text-align: center;
-    position: relative;
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f0e6ff; /* A soft purple background */
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvZGVmcz48cGF0aCBkPSJNLTI1IDc1TDI1IDI1VjAtMjUgMjVMNzUgNzVMMjUgMTI1VjEwMEwyNSAyNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2cpIiBzdHJva2Utd2lkdGg9IjUiLz48L3N2Zz4=');
+            background-size: 200px;
+        }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1rem;
-    position: relative;
-    z-index: 10;
-}
+        .card {
+            background: white;
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(103, 58, 183, 0.2);
+            max-width: 550px;
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 0.8s ease-out;
+        }
 
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #8b0000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
+        .header {
+            background: linear-gradient(45deg, #673ab7, #9c27b0);
+            padding: 15px;
+            color: white;
+            position: relative;
+        }
 
-.rakhi-image {
-    margin: 1rem auto;
-    width: 250px;
-    height: 250px;
-    animation: float 4s ease-in-out infinite;
-}
+        .header h1 {
+            font-family: 'Kalam', cursive;
+            font-size: 2rem;
+            margin-bottom: 5px;
+            position: relative;
+            z-index: 2;
+        }
 
-.rakhi-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    filter: drop-shadow(0 5px 15px rgba(139, 0, 0, 0.4));
-}
+        .rakhi-ribbon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('Mithai.png') repeat-x;
+            background-size: contain;
+            opacity: 0.8;
+            pointer-events: none;
+            animation: moveRibbon 15s linear: ; infinite;
+        }
 
-.input-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    margin-top: 1rem;
-}
+        .image-container {
+            padding: 20px;
+            position: relative;
+        }
 
-input {
-    padding: 1rem;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 50px;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-}
+        .brother-sister-img {
+            width: 95%;
+            height: 350px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            object-fit: cover;
+            animation: float 4s ease-in-out infinite, pulse 2s infinite ease-in-out;
+        }
 
-button {
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    background-color: #8b0000;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 0.5rem;
-}
+        .wish-container {
+            padding: 0 25px 25px;
+        }
 
-button:hover {
-    background-color: #a52a2a;
-    transform: translateY(-3px);
-}
+        .wish-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #673ab7;
+            margin-bottom: 25px;
+            font-family: 'Kalam', cursive;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: bounceIn 1s forwards ease-in-out;
+            animation-delay: 0.5s;
+            opacity: 0;
+        }
 
-.button-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+        .name-input {
+            margin: 20px 0;
+        }
 
-#message-section {
-    display: none;
-    animation: fadeIn 1s ease;
-}
+        input {
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid #9c27b0;
+            border-radius: 50px;
+            font-size: 1rem;
+            outline: none;
+            text-align: center;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+        }
 
-.message-box {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    margin: 1rem 0;
-}
+        input:focus {
+            border-color: #673ab7;
+            box-shadow: 0 0 10px rgba(103, 58, 183, 0.3);
+        }
 
-.message-line {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-    line-height: 1.6;
-    color: #5a2a27;
-}
+        .btn {
+            background: linear-gradient(45deg, #ff9800, #ff5722);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+            margin-top: 10px;
+            width: 100%;
+        }
 
-#name-display {
-    color: #8b0000;
-    font-weight: bold;
-}
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 152, 0, 0.4);
+        }
+        
+        .ad-container {
+            margin: 15px auto;
+            max-width: 300px;
+            text-align: center;
+        }
 
-.hidden {
-    display: none;
-}
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-.visible {
-    display: block;
-}
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.2); opacity: 1; }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        
+        @keyframes moveRibbon {
+            from { background-position: 0 0; }
+            to { background-position: -200px 0; }
+        }
 
-/* Animated Elements */
-.confetti {
-    position: fixed;
-    width: 10px;
-    height: 10px;
-    background-color: #f00;
-    opacity: 0;
-    animation: confetti 5s ease-in-out infinite;
-    z-index: 1;
-}
-
-.confetti:nth-child(1) {
-    background-color: #f00;
-    left: 10%;
-    animation-delay: 0s;
-}
-
-.confetti:nth-child(2) {
-    background-color: #0f0;
-    left: 20%;
-    animation-delay: 1s;
-}
-
-.confetti:nth-child(3) {
-    background-color: #00f;
-    left: 30%;
-    animation-delay: 2s;
-}
-
-.confetti:nth-child(4) {
-    background-color: #ff0;
-    left: 40%;
-    animation-delay: 3s;
-}
-
-.confetti:nth-child(5) {
-    background-color: #f0f;
-    left: 50%;
-    animation-delay: 4s;
-}
-
-.diyas {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    z-index: 1;
-}
-
-.diya {
-    width: 60px;
-    height: 60px;
-    background-color: #ffa500;
-    border-radius: 50% 50% 0 0;
-    position: relative;
-    animation: flicker 3s infinite alternate;
-}
-
-.diya::before {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: 25px;
-    width: 10px;
-    height: 30px;
-    background-color: #ff4500;
-    border-radius: 5px;
-    box-shadow: 0 0 20px #ff4500;
-}
-
-.hearts {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    z-index: 1;
-}
-
-.heart {
-    font-size: 2rem;
-    animation: float 4s ease-in-out infinite;
-}
-
-.heart:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.heart:nth-child(2) {
-    animation-delay: 1s;
-}
-
-.heart:nth-child(3) {
-    animation-delay: 2s;
-}
-
-.floating-rakhi {
-    position: fixed;
-    right: 5%;
-    top: 30%;
-    width: 100px;
-    height: 100px;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="gold"/><circle cx="50" cy="50" r="30" fill="red"/><circle cx="50" cy="50" r="20" fill="gold"/><circle cx="50" cy="50" r="10" fill="red"/></svg>');
-    background-size: contain;
-    animation: spin 8s linear infinite;
-    z-index: 1;
-}
-
-/* Animations */
-@keyframes confetti {
-    0% {
-        transform: translateY(-100px) rotate(0deg);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(100vh) rotate(360deg);
-        opacity: 0;
-    }
-}
-
-@keyframes flicker {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.7;
-    }
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-20px) rotate(10deg);
-    }
-    100% {
-        transform: translateY(0) rotate(0deg);
-    }
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-    
-    .rakhi-image {
-        width: 200px;
-        height: 200px;
-    }
-    
-    .message-line {
-        font-size: 1.2rem;
-    }
-    
-    button {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
-    }
-    
-    .floating-rakhi {
-        width: 70px;
-        height: 70px;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-    
-    .rakhi-image {
-        width: 150px;
-        height: 150px;
-    }
-    
-    .message-line {
-        font-size: 1rem;
-    }
-    
-    input {
-        font-size: 1rem;
-    }
-    
-    .diya {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .diya::before {
-        left: 15px;
-        width: 8px;
-        height: 20px;
-    }
-    
-    .button-group {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    button {
-        width: 90%;
-        max-width: 300px;
-    }
-}
+        @media (max-width: 480px) {
+            .header h1 { font-size: 1.5rem; }
+            .wish-text { font-size: 1.6rem; }
+            .brother-sister-img { height: 300px; }
+            body { padding: 10px; }
+            .card { border-radius: 20px; }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div id="input-section">
-            <h1>रक्षाबंधन की शुभकामनाएँ</h1>
-            <div class="rakhi-image" id="main-image">
-                <img src="Rakhi.png" alt="Raksha Bandhan">
-            </div>
-            <div class="input-container">
-                <input type="text" id="name-input" placeholder="अपना नाम लिखें...">
-                <button id="submit-btn">शुभकामनाएँ भेजें</button>
-            </div>
+    <div class="card">
+        <div class="header">
+            <div class="rakhi-ribbon"></div>
+            <h1>रक्षाबंधन की हार्दिक शुभकामनाएं</h1>
         </div>
-        
-        <div id="message-section" class="hidden">
-            <div class="rakhi-image">
-                <img src="Mithai.png" alt="Raksha Bandhan">
-            </div>
-            <div class="message-box">
-                <p class="message-line">🎉 राखी के इस पावन पर्व पर 🎉</p>
-                <p class="message-line">❤️ आपके भाई <span id="name-display"></span> की ओर से ढेरों शुभकामनाएँ ❤️</p>
-                <p class="message-line">🌸 यह रिश्ता सदा बना रहे, प्यार यूं ही बढ़ता रहे 🌸</p>
-                <p class="message-line">🌟 रक्षाबंधन की हार्दिक शुभकामनाएँ! 🌟</p>
-            </div>
-            <div class="button-group">
-                <button id="share-btn">WhatsApp पर शेयर करें</button>
-                <button id="back-btn">नया संदेश भेजें</button>
-            </div>
-        </div>
-    </div>
 
-    <!-- Animated Elements -->
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    <div class="confetti"></div>
-    
-    <div class="diyas">
-        <div class="diya"></div>
-        <div class="diya"></div>
-        <div class="diya"></div>
+        <div class="image-container">
+            <img src="Rakhi.png" alt="भाई-बहन का प्यार" class="brother-sister-img">
+        </div>
+
+        <div class="wish-container">
+            <div class="wish-text" id="wishMessage">भाई-बहन के इस पवित्र रिश्ते को मेरी तरफ से रक्षाबंधन की बहुत-बहुत शुभकामनाएं!</div>
+
+            <div class="name-input">
+                <input type="text" id="userName" placeholder="अपना नाम लिखें">
+            </div>
+
+            <button class="btn" id="shareWhatsapp">WhatsApp पर भेजें</button>
+        </div>
     </div>
-    
-    <div class="hearts">
-        <div class="heart">❤️</div>
-        <div class="heart">❤️</div>
-        <div class="heart">❤️</div>
-    </div>
-    
-    <div class="floating-rakhi"></div>
 
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const nameInput = document.getElementById('name-input');
-        const submitBtn = document.getElementById('submit-btn');
-        const nameDisplay = document.getElementById('name-display');
-        const inputSection = document.getElementById('input-section');
-        const messageSection = document.getElementById('message-section');
-        const shareBtn = document.getElementById('share-btn');
-        const backBtn = document.getElementById('back-btn');
-        const mainImage = document.getElementById('main-image').querySelector('img');
-        
-        const images = ['Rakhi.png', 'Mithai.png'];
-        let currentImageIndex = 0;
-        
-        // 🔄 Auto image toggle every 3 seconds
-        setInterval(() => {
-            currentImageIndex = (currentImageIndex + 1) % images.length;
-            mainImage.src = images[currentImageIndex];
-        }, 3000);
-        
-        // Submit name and show message
-        submitBtn.addEventListener('click', function() {
-            const name = nameInput.value.trim();
+        document.addEventListener('DOMContentLoaded', function() {
+            const userName = document.getElementById('userName');
+            const shareBtn = document.getElementById('shareWhatsapp');
+            const wishMessage = document.getElementById('wishMessage');
             
-            if (name === '') {
-                alert('कृपया अपना नाम दर्ज करें');
-                return;
+            const defaultMessage = "भाई-बहन के इस पवित्र रिश्ते को मेरी तरफ से रक्षाबंधन की बहुत-बहुत शुभकामनाएं!";
+
+            // Check URL for name parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const fromName = urlParams.get('from');
+            
+            if (fromName) {
+                wishMessage.textContent = `${fromName} की ओर से आपको और आपके भाई-बहन को रक्षाबंधन की शुभकामनाएं!`;
+                userName.value = fromName;
+            } else {
+                wishMessage.textContent = defaultMessage;
             }
             
-            nameDisplay.textContent = name;
-            inputSection.classList.add('hidden');
-            messageSection.classList.remove('hidden');
+            // Share on WhatsApp
+            shareBtn.addEventListener('click', function() {
+                const name = userName.value.trim();
+                if (!name) {
+                    alert('कृपया अपना नाम लिखें');
+                    return;
+                }
+                
+                // Update message immediately when sharing
+                const personalizedMessage = `${name} की ओर से आपको और आपके भाई-बहन को रक्षाबंधन की शुभकामनाएं!`;
+                wishMessage.textContent = personalizedMessage;
+                
+                const url = `${window.location.origin}${window.location.pathname}?from=${encodeURIComponent(name)}`;
+                const whatsappText = `${personalizedMessage}\n\nइस खूबसूरत विशिंग कार्ड को देखने के लिए यहाँ क्लिक करें: ${url}`;
+                const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(whatsappText)}`;
+                
+                window.open(whatsappUrl, '_blank');
+            });
             
-            triggerExtraConfetti();
+            // Auto update when name is entered
+            userName.addEventListener('input', function() {
+                const name = userName.value.trim();
+                if (name) {
+                    wishMessage.textContent = `${name} की ओर से आपको और आपके भाई-बहन को रक्षाबंधन की शुभकामनाएं!`;
+                } else {
+                    wishMessage.textContent = defaultMessage;
+                }
+            });
         });
-        
-        // Back button
-        backBtn.addEventListener('click', function() {
-            messageSection.classList.add('hidden');
-            inputSection.classList.remove('hidden');
-            nameInput.value = '';
-            nameInput.focus();
-        });
-        
-        // ✅ WhatsApp Share (Fixed)
-        shareBtn.addEventListener('click', function() {
-            const name = nameDisplay.textContent;
-            const shareText = `🎉 ${name} की ओर से रक्षाबंधन की हार्दिक शुभकामनाएँ! 🌸\n\n👉 देखें: ${window.location.href}`;
-            const whatsappUrl = `https://wa.me/${encodeURIComponent(shareText)}`;
-            window.open(whatsappUrl, '_blank');
-        });
-        
-        // Extra confetti animation
-        function triggerExtraConfetti() {
-            for (let i = 0; i < 20; i++) {
-                setTimeout(() => {
-                    createExtraConfetti();
-                }, i * 100);
-            }
-        }
-        
-        function createExtraConfetti() {
-            const confetti = document.createElement('div');
-            confetti.className = 'confetti';
-            confetti.style.left = Math.random() * 100 + 'vw';
-            confetti.style.backgroundColor = getRandomColor();
-            document.body.appendChild(confetti);
-            
-            setTimeout(() => {
-                confetti.remove();
-            }, 5000);
-        }
-        
-        function getRandomColor() {
-            const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
-            return colors[Math.floor(Math.random() * colors.length)];
-        }
-        
-        nameInput.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                submitBtn.click();
-            }
-        });
-        
-        nameInput.focus();
-    });
-</script>
+    </script>
 </body>
 </html>
